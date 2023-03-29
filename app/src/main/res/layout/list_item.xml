@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="ViewModel"
+            type="kz.kuz.recyclerviewdatabind.ViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="8dp"
+            android:onClick="@{() -> ViewModel.playAudio()}"
+            android:text="@{ViewModel.soundTitle}"
+            />
+    </LinearLayout>
+</layout>
